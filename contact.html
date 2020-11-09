@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="icon" href="imgs/favicon.ico">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Fahkwang' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+</head>
+<body>
+<header>
+	<div class="skip"><a href="\#main">Skip to Main Content</a></div>
+	<div class = "title">
+		<h1 class = "myname">Saya Takai</h1>
+	</div>
+	<nav>
+		<ul class = "navbar">
+			<li class = "nav_links"><a href="index.html">About</a></li>
+			<li class = "nav_links"><a href="academics.html">Academics</a></li>
+			<li class = "nav_links"><a href="equestrian.html">Equestrian</a></li>
+			<li class = "nav_links"><a href="umet.html">UMET</a></li>
+			<li class = "nav_links" id = "current"><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main class = "display">
+	<form action="https://formspree.io/f/xleonewl" method="POST">
+		<fieldset class = "form">
+		<legend class="grid1">Contact Me</legend>
+		<div class = "divs">
+			<label for= "name_id" class = "name">Name</label>
+			<input id = "name_id" type="text" placeholder="Enter Your Name" name = "name" required>
+		</div>
+
+		<div class = "divs">
+			<label for="email_id" class="email">Email</label>
+			<input id="email_id" type="email" name = "email" required>
+		</div>
+		
+		<div class = "divs">
+			<label for="phone_id" class="phone">Phone Number</label>
+			<input id = "phone_id" type="tel" name = "phone" placeholder ="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+			<div class = "format"><span>Format: 123-456-7890</span></div>
+		</div>
+		
+		<div class = "divs">
+			<label for="msg_id" class="message">Leave A Message</label>
+			<textarea id = "msg_id" name = "message" required></textarea><br>
+		</div>
+
+		<div class = "divs">	
+			<label for="remember_id" class="remember">Remember me</label>
+			<input id="remember_id"type="checkbox"> 
+		</div>
+		<input class= "submit" type="submit" value = "Contact Me!">
+		</fieldset>
+	</form>
+</main>
+
+
+
+
+<footer>
+<p>Saya Takai &copy; 2020</p>
+</footer>
+</body>
+</html>
