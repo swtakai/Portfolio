@@ -371,9 +371,10 @@ input{
     .academics{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0px 5vw;
     }
     .education{
-        padding: 50px;
+        padding: 2vw 0vw;
         grid-column: 1/-1;
         grid-row: 1/2;
         display: flex;
@@ -387,18 +388,18 @@ input{
         align-self: center;
     }
     .experience{
-        padding: 2.5vw 5vw 0vw 2vw;
+        padding: 2vw 2.5vw 0vw 0vw;
         grid-column: 1/span 1;
         grid-row: 2/3;
     }
     .skills{
         /* padding: top right bottom left; */
-        padding: 2vw 5vw 0vw 2.5vw;
+        padding: 2vw 0vw 0vw 2.5vw;
         grid-column: 2/-1;
         grid-row: 2/3;
     }
     .awards{
-        padding: 50px;
+        padding: 2vw 0vw;
         grid-column: 1/-1;
         grid-row: 3/4;
     }
