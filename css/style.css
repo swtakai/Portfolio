@@ -96,7 +96,7 @@ img{
     width: 125px;
 }
 .main_photo{
-    width: 25%;
+    width: 50vw;
     height: auto;
 }
 footer{
@@ -200,6 +200,7 @@ input{
     list-style-type: square;
 }
 .academics li{
+    list-style-position: inside;
     font-family: 'Fahkwang';
     font-weight: normal;
     padding: 0px 20px;
@@ -211,14 +212,12 @@ input{
 /* Parallax Image */
 .parallax{
     background-attachment: fixed;  
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150px;
+    height: 25vw;
   
     background-image: url("../imgs/Mike.jpg");
-    background-position: 35% 0%;
-    background-size: 200%;
+    background-position: center;
     background-repeat: no-repeat; 
   
     grid-column: 1 / -1;
@@ -311,14 +310,12 @@ input{
 /* UMET */
 .umet{
     background-attachment: fixed;  
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150px;
+    height: 25vw;
   
     background-image: url("../imgs/umet.JPG");
-    background-position: 35% 0%;
-    background-size: 200%;
+    background-position: center;
     background-repeat: no-repeat; 
   
     grid-column: 1 / -1;
@@ -362,7 +359,28 @@ input{
     .nav_links{
         padding: 15px;
     }
-    .grid{
+    /* .parallax{
+        background-attachment: fixed;  
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25vw;
+
+        background-position: 0% 0%;
+        background-size: 100%;
+        background-repeat: no-repeat; 
+      
+        grid-column: 1 / -1;
+        grid-row: 1 / auto;
+      } */
+    .main_photo {
+        width: 25vw;
+      }
+    p{
+        padding: 15px 50px;
+    }
+
+    /* .grid{
         display: grid;
         grid-template-columns: 1fr 3fr 5fr 3fr 1fr;
         grid-template-rows: auto auto auto auto auto;
@@ -388,5 +406,5 @@ input{
         width: 800px;
         height: 1000px;
     }
-}
+} */
 
