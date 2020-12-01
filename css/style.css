@@ -195,20 +195,22 @@ input{
     font-family: 'Tenor Sans';
     font-size: .90em;
     font-weight: bold;
-    list-style-position: inside; 
-    padding: 5px 0px;
-    list-style-type: square;
+    padding: 5px 10px;
 }
 .academics li{
     list-style-position: inside;
     font-family: 'Fahkwang';
     font-weight: normal;
-    padding: 0px 20px;
+    padding: 5px 20px;
     font-size: 0.80em;
 }
-.headings{
-    padding: 10px 0px 5px 0px;
+.education, .skills, .awards{
+    padding: 10px 0px;
 }
+.border{
+    border: 3px dotted black;
+}
+
 /* Parallax Image */
 .parallax{
     background-attachment: fixed;  
@@ -359,52 +361,46 @@ input{
     .nav_links{
         padding: 15px;
     }
-    /* .parallax{
-        background-attachment: fixed;  
-        /* background-position: center; */
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 25vw;
 
-        background-position: 0% 0%;
-        background-size: 100%;
-        background-repeat: no-repeat; 
-      
-        grid-column: 1 / -1;
-        grid-row: 1 / auto;
-      } */
     .main_photo {
         width: 25vw;
       }
     p{
         padding: 15px 50px;
     }
-
-    /* .grid{
+    .academics{
         display: grid;
-        grid-template-columns: 1fr 3fr 5fr 3fr 1fr;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
     }
-
-    .billy_img{
-        grid-column: 2/3;
+    .education{
+        padding: 50px;
+        grid-column: 1/-1;
         grid-row: 1/2;
+        display: flex;
+        flex-flow: column nowrap;
+        align-self: center;
     }
-    .billy_text{
-        grid-column: 3/5;
-        grid-row: 1/2;
+    .education h2{
+        align-self: center;
     }
-    .luna_img{
-        grid-column: 4/5;
+    .content{
+        align-self: center;
+    }
+    .experience{
+        padding: 2.5vw 5vw 0vw 2vw;
+        grid-column: 1/span 1;
         grid-row: 2/3;
     }
-    .luna_text{
-        grid-column: 2/4;
+    .skills{
+        /* padding: top right bottom left; */
+        padding: 2vw 5vw 0vw 2.5vw;
+        grid-column: 2/-1;
         grid-row: 2/3;
     }
-    #resume{
-        width: 800px;
-        height: 1000px;
+    .awards{
+        padding: 50px;
+        grid-column: 1/-1;
+        grid-row: 3/4;
     }
-} */
 
+} 
