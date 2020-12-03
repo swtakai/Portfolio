@@ -101,6 +101,7 @@ main{
     height: 63vw;
     box-shadow: 0 0 7px 7px #a6a6a6; 
 }
+
 .aboutpg{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -155,9 +156,14 @@ main{
     box-shadow: 0 0 7px 7px #a6a6a6; 
     transform: rotateY(180deg);
 }
+.flip-name{
+    font-size: 2em;
+}
 .flip-txt{
+    font-size: 0.8em;
     padding: 10px 25px;
 }
+
 footer{
     position: fixed;
     left: 0;
@@ -665,5 +671,13 @@ input{
     }
     .card1, .card2, .card3{
         padding: 2.5vw;
+    }
+    .flip-name{
+        font-size: 3.5vw;
+        padding: .6vw 30px;
+    }
+    .flip-txt{
+        font-size: 1.5vw;
+        padding: .5vw 30px;
     }
 } 
