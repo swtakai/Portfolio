@@ -1,19 +1,20 @@
 /* Style consistent elements */
 body{ 
     font-size: 16pt;
-    background-color: #F0F8FF;
-    min-height: 400px;
-    margin-bottom: 100px;
-    clear: both;
-
+    background-color: #e1eafa;
+}
+html,body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 header{
     display: flex;
     flex-flow: column nowrap;
-    padding: 0px 0px 15px 0px;
 }
 .title{
-    background-color: #c5e3fc;
+    background-color: #c0d5fa;
 }
 h1{
     font-family: 'Tenor Sans';
@@ -51,41 +52,15 @@ nav a{
     text-align: center;
     padding: 5px 0px;
 }
-.bar1, .bar2, .bar3{
-    width: 35px;
-    height: 5px;
-    background-color: #708090;
-    margin: 6px 15px;
-    transition: 0.4s;
-    align-self: flex-start;
-}
-/* w3schools */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-  
-.change .bar2 {opacity: 0;}
-  
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-.button {
-    display: inline-block;
-    cursor: pointer;
-    background-color:white;
-    border-top: 2px solid black;
-}
-.hidden{
-    display:none;
-}
 #current{
-    background-color: #4aadff;
+    background-color: #313f59;
     font-weight: bolder;
     font-size: 1.35em;
     width: 100%;
     box-shadow: 0 0 7px 7px #a6a6a6; 
+}
+#current a{
+    color: white;
 }
 .skip a{
     background: #F0F8FF;
@@ -120,22 +95,43 @@ main{
 }
 
 .main_photo{
-    width: 50vw;
-    height: 70vw;
+    width: 45vw;
+    height: 63vw;
     box-shadow: 0 0 7px 7px #a6a6a6; 
 }
+.aboutpg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    padding: 100px 0px;
+}
+.about-txt{
+    grid-column: 1/-1;
+    grid-row: 4/5;
+}
+.introduce{
+    font-size: 1.5em;
+}
+.color-block{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 100vw;
+    height: 30vw;
 
+}
 /* flipcard? */
 .flip-card {
-    width: 50vw;
-    height: 70vw;
+    width: 45vw;
+    height: 63vw;
     perspective: 1000px;
     align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/4;
 }
   
 .flip-card-inner {
-    width: 50vw;
-    height: 70vw;
+    width: 45vw;
+    height: 63vw;;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
@@ -146,13 +142,13 @@ main{
   
 .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 50vw;
-    height: 70vw;
+    width: 45vw;
+    height: 63vw;
     backface-visibility: hidden;
 }
 
 .flip-card-back {
-    background-color: #0e5896;
+    background-color: #313f59;
     color: white;
     box-shadow: 0 0 7px 7px #a6a6a6; 
     transform: rotateY(180deg);
@@ -165,10 +161,80 @@ footer{
     left: 0;
     bottom: 0;
     width:100%;
+    overflow: hidden;
     font-size: .75em;
     background-color: black;
     color: white;
     text-align: center;
+}
+.Equestrian{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Equestrian h2{
+    font-size: 5.5vw;
+}
+.Equestrian p{
+    padding: 2vw;
+    font-size: 2.7vw;
+}
+.eq-title{
+    font-size: 1.75em;
+    padding: 50px 0px 0px;
+}
+/* EQ Flip Card */
+.flip-card2 {
+    width: 50vw;
+    height: 80vw;
+    perspective: 1000px;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+  
+.flip-card-inner2 {
+    width: 50vw;
+    height: 80vw;;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 50vw;
+    height: 80vw;
+    backface-visibility: hidden;
+}
+
+.flip-card-back2 {
+    background-color: #313f59;
+    color: white;
+    box-shadow: 0 0 7px 7px #a6a6a6; 
+    transform: rotateY(180deg);
+}
+.flip-card-front2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.card1{
+    grid-column: 1/2;
+}
+.card2{
+    grid-column: 2/3;
+}
+.card3{
+    grid-column: 3/4;
+}
+.card1, .card2, .card3{
+    padding: 2.5vw;
+    align-self: center;
 }
 .grid{
     display: grid;
@@ -198,25 +264,44 @@ footer{
     grid-row: 4/5;
 }
 /* Contact Form Styling */
-.display{
+/* .display{
     padding: 0px 30px;
+} */
+.contact-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 form{
-    padding: 10px;
-    
+    padding: 50px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
 }
+.contact-color{
+    grid-column: 1/-1;
+    width: 100%;
+    max-height: 20vw;
+    grid-row: 3/4;
+    overflow: hidden;
+}
+.contact-img{
+    padding: 25px;
+    grid-column: 2/3;
+    width: 45vw;
+    grid-row: 2/5;
+}
+
 .form{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-content: space-around;
+    padding: 25px;
 }
 .grid1{
     margin:auto;
     font-family: 'Tenor Sans';
     font-size: 1.25em;
     font-weight: bold;
-    padding-bottom: 15px;
 }
 
 .divs{
@@ -250,7 +335,7 @@ input{
     font-size: 0.85em;
 }
 .academics{
-    padding: 0px 30px;
+    padding: 50px 75px;
 }
 .academics h3{
     font-family: 'Tenor Sans';
@@ -291,6 +376,9 @@ input{
     text-align: center;
     font-family: 'Tenor Sans';
     font-size: .95em;
+}
+.Equestrian{
+    padding: 50px 75px;
 }
 /*Image Gallery */
 .gallery{
@@ -394,6 +482,9 @@ input{
     justify-content: center;
     align-items: center;
 }
+.umet-txt{
+    padding: 50px 75px;
+}
 @-webkit-keyframes name{
     0%   {top: -80px;}
     100% {top: 0px;}
@@ -415,7 +506,29 @@ input{
         width: 25vw;
         height: 35vw;
     }
+    .aboutpg{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        padding: 100px 0px;
+    }
+    .about-txt{
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+    .introduce{
+        font-size: 1.5em;
+    }
+    .color-block{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: 400px;
+        height: 300px;
+    
+    }
+    /* flipcard? */
     .flip-card {
+        grid-column: 2/3;
+        grid-row: 1/4;
         width: 25vw;
         height: 35vw;
     }
@@ -440,10 +553,13 @@ input{
     p{
         padding: 15px 50px;
     }
+    footer p{
+        padding: none;
+    }
     .academics{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 5vw;
+        padding: 0px 15vw;
     }
     .education{
         padding: 2vw 0vw;
@@ -475,5 +591,70 @@ input{
         grid-column: 1/-1;
         grid-row: 3/4;
     }
+    .contact-grid{
+        display:grid;
+        grid-template-columns: 1fr 5fr 1fr 1fr;
+    }
+    form{
+        padding: 10px;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    .contact-color{
+        padding-left: 10px;
+        grid-column: 3/-1;
+        width: 100%;
+        max-height: 10vw;
+        grid-row: 2/3;
+        overflow: hidden;
+    }
+    .contact-img{
+        grid-column: 3/4;
+        padding-left: 10px;
+        padding-top: 50px;
+        width: 25vw;
+        grid-row: 1/4;
+    }
 
+    .Equestrian{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Equestrian h2{
+        font-size: 2.5vw;
+    }
+    .Equestrian p{
+        padding: 2vw;
+        font-size: 1.2vw;
+    }
+    /* EQ Flip Card */
+    .flip-card2 {
+        width: 25vw;
+        height: 40vw;
+        perspective: 1000px;
+        align-self: center;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+      
+    .flip-card-inner2 {
+        width: 25vw;
+        height: 40vw;;
+    }
+    .flip-card-front2, .flip-card-back2 {
+        width: 25vw;
+        height: 40vw;
+    }
+    .card1{
+        grid-column: 1/2;
+    }
+    .card2{
+        grid-column: 2/3;
+    }
+    .card3{
+        grid-column: 3/4;
+    }
+    .card1, .card2, .card3{
+        padding: 2.5vw;
+    }
 } 
