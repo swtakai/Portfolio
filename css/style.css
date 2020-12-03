@@ -51,6 +51,35 @@ nav a{
     text-align: center;
     padding: 5px 0px;
 }
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #708090;
+    margin: 6px 15px;
+    transition: 0.4s;
+    align-self: flex-start;
+}
+/* w3schools */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.button {
+    display: inline-block;
+    cursor: pointer;
+    background-color:white;
+    border-top: 2px solid black;
+}
+.hidden{
+    display:none;
+}
 #current{
     background-color: #4aadff;
     font-weight: bolder;
@@ -89,15 +118,47 @@ main{
 *:focus{
     border: 3px dotted black;
 }
-img{
-    align-self: center;
-    padding: 10px;
-    box-shadow: 0 0 7px 7px #a6a6a6; 
-    width: 125px;
-}
+
 .main_photo{
     width: 50vw;
-    height: auto;
+    height: 70vw;
+    box-shadow: 0 0 7px 7px #a6a6a6; 
+}
+
+/* flipcard? */
+.flip-card {
+    width: 50vw;
+    height: 70vw;
+    perspective: 1000px;
+    align-self: center;
+}
+  
+.flip-card-inner {
+    width: 50vw;
+    height: 70vw;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 50vw;
+    height: 70vw;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #0e5896;
+    color: white;
+    box-shadow: 0 0 7px 7px #a6a6a6; 
+    transform: rotateY(180deg);
+}
+.flip-txt{
+    padding: 10px 25px;
 }
 footer{
     position: fixed;
@@ -351,8 +412,22 @@ input{
 
 @media all and (min-width: 800px){
     .main_photo{
-        width: 30%;
-        height: auto;
+        width: 25vw;
+        height: 35vw;
+    }
+    .flip-card {
+        width: 25vw;
+        height: 35vw;
+    }
+      
+    .flip-card-inner {
+        width: 25vw;
+        height: 35vw;
+    }
+      
+    .flip-card-front, .flip-card-back {
+        width: 25vw;
+        height: 35vw;
     }
     .navbar{
         flex-flow: row nowrap;
@@ -362,9 +437,6 @@ input{
         padding: 15px;
     }
 
-    .main_photo {
-        width: 25vw;
-      }
     p{
         padding: 15px 50px;
     }
