@@ -2,6 +2,8 @@
 body{ 
     font-size: 16pt;
     background-color: #e1eafa;
+    min-height: 1000px;
+    margin-bottom: 100px;
 }
 html,body{
     width: 100%;
@@ -218,6 +220,7 @@ footer{
     transform: rotateY(180deg);
 }
 .flip-card-front2{
+    border: 1.25vw solid #5b75a4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,6 +273,7 @@ footer{
 .contact-grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 form{
     padding: 50px;
@@ -391,6 +395,7 @@ input{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: auto;
+    padding-bottom: 150px;
 
 }
 .container img{
@@ -502,6 +507,10 @@ input{
 }
 
 @media all and (min-width: 800px){
+    h1{
+        font-size: 2.75em;
+        padding: 25px 0px;
+    }
     .main_photo{
         width: 25vw;
         height: 35vw;
