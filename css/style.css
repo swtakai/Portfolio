@@ -534,9 +534,9 @@ input{
         position: absolute;
         backface-visibility: hidden;
     }
-    .flip-card2:hover .flip-card-inner2 {
+    /* .flip-card2:hover .flip-card-inner2 {
         transform: rotateY(180deg);
-    }
+    } */
     .flip-card2:active .flip-card-inner2 {
         transform: rotateY(180deg);
     }
