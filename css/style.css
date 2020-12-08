@@ -37,7 +37,7 @@ nav{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-.navbar{
+.navbar, .navbar-responsive{
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
@@ -515,13 +515,13 @@ input{
         display: none;
     }
     
-    .navbar.responsive {
+    .navbar-responsive {
         position: relative;
     }
-    .navbar.responsive .icon {
+    .navbar-responsive .icon {
         display:none;
     }
-    .navbar.responsive .icon1 {
+    .navbar-responsive .icon1 {
         display:block;
         position: absolute;
         color: black;
@@ -529,14 +529,14 @@ input{
         top: 0;
     }
 
-    .navbar.responsive #light {
+    .navbar-responsive #light {
         display:block;
         position: absolute;
         color: white;
         right: 0;
         top: 0;
     }
-    .navbar.responsive li {
+    .navbar-responsive li {
         display: block;
     }
     .navbar .icon{
