@@ -64,36 +64,7 @@ nav a{
     font-size: 4.5vw;
     color: white;
 }
-/* responsive navbar */
-.navbar li:not(:first-child) {
-    display: none;
-}
-.navbar-responsive {
-    position: relative;
-}
-.navbar-responsive #light {
-    display:block;
-    position: absolute;
-    color: white;
-    right: 0;
-    top: 0;
-}
-.navbar-responsive li {
-    display: block;
-}
-.navbar-responsive .icon, .navbar .icon1 {
-    display:none;
-}
-.navbar-responsive .icon1{
-    display:block;
-    position: absolute;
-    color: black;
-    right: 0;
-    top: 0;
-}
-.navbar .icon {
-    position: relative;
-}
+
 .skip a{
     background: #F0F8FF;
     color: black;
@@ -534,8 +505,38 @@ input{
    animation: name 5s 1;  
 }
 
-
-
+@media all and (max-width: 601px){
+    /* responsive navbar */
+    .navbar li:not(:first-child) {
+        display: none;
+    }
+    .navbar-responsive {
+        position: relative;
+    }
+    .navbar-responsive #light {
+        display:block;
+        position: absolute;
+        color: white;
+        right: 0;
+        top: 0;
+    }
+    .navbar-responsive li {
+        display: block;
+    }
+    .navbar-responsive .icon, .navbar .icon1 {
+        display:none;
+    }
+    .navbar-responsive .icon1{
+        display:block;
+        position: absolute;
+        color: black;
+        right: 0;
+        top: 0;
+    }
+    .navbar .icon {
+        position: relative;
+    }
+}
 @media all and (min-width: 601px){
     h1{
         font-size: 6vw;
