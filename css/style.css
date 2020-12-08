@@ -20,15 +20,21 @@ header{
 }
 h1{
     font-family: 'Tenor Sans';
-    font-size: 8vw;
+    font-size: 40px;
     text-align: center;
     padding:15px 0px;
 }
-h2{
+h2 {
     font-family: 'Tenor Sans';
-    font-size: 1em;
     text-align: center;
     padding:15px 0px;
+    font-size: 25px;
+}
+h3 {
+    font-family: 'Tenor Sans';
+    text-align: center;
+    padding:15px 0px;
+    font-size: 16px;
 }
 nav{
     display: flex;
@@ -45,7 +51,7 @@ nav{
 }
 nav a{
     font-family: 'Fahkwang';
-    font-size: 3.5vw;
+    font-size: 17.5px;
     color: black;
     text-decoration: none;
     line-height: 1.6;
@@ -61,7 +67,7 @@ nav a{
 }
 #current a{
     font-weight: bolder;
-    font-size: 4.5vw;
+    font-size: 22.5px;
     color: white;
 }
 
@@ -83,14 +89,11 @@ nav a{
     position: absolute;
     top: 0px;
   }
-p, h4, h5{
+p, h4, h5, .academics li{
     font-family: 'Fahkwang';
-    padding: 2vw 10vw;
-    padding: 15px;
+    padding: 10px 50px;
+    font-size: 15px;
     line-height: 1.5;
-}
-p{
-    font-size: 2.5vw;
 }
 main{
     display: flex;
@@ -101,14 +104,14 @@ main{
 }
 
 .main_photo{
-    width: 45vw;
-    height: 63vw;
+    width: 225px;
+    height: 315px;
     box-shadow: 0 0 7px 7px #a6a6a6; 
 }
 
 .aboutpg{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     row-gap: 50px;
     padding: 100px 0px;
 }
@@ -117,22 +120,19 @@ main{
     grid-row: 4/5;
 }
 .introduce{
-    padding: 2vw 10vw;
-}
-.intro{
-    padding: 2vw 10vw;
+    padding: 10px 50px;
 }
 .color-block{
-    grid-column: 1/3;
+    grid-column: 1/-1;
     grid-row: 2/3;
-    width: 100vw;
-    height: 30vw;
+    width: 100%;
+    height: 150px;
 
 }
 /* flipcard? */
 .flip-card {
-    width: 45vw;
-    height: 63vw;
+    width: 225px;
+    height: 315px;
     perspective: 1000px;
     align-self: center;
     grid-column: 2/3;
@@ -140,16 +140,16 @@ main{
 }
   
 .flip-card-inner {
-    width: 45vw;
-    height: 63vw;;
+    width: 225px;
+    height: 315px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
   
 .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 45vw;
-    height: 63vw;
+    width: 225px;
+    height: 315px;
     backface-visibility: hidden;
 }
 
@@ -160,11 +160,11 @@ main{
     transform: rotateY(180deg);
 }
 .flip-name{
-    font-size: 4vw;
+    font-size: 80px;
 }
 .flip-txt{
-    font-size: 2.75vw;
-    padding: 1.25vw 5vw;
+    font-size: 13.75px;
+    padding: 6.25px 25px;
 }
 footer p, h5{
     padding: none;
@@ -178,7 +178,7 @@ footer{
     bottom: 0;
     width:100%;
     overflow: hidden;
-    font-size: .75em;
+    font-size: 12px;
     background-color: black;
     color: white;
     text-align: center;
@@ -186,12 +186,8 @@ footer{
 .Equestrian{
     display: none;
 }
-.page-title{
-    font-size: 6vw;
-}
-
 .equitation, .hunter, .jumper{
-    padding: 1.5vw;
+    padding: 7.5px;
 }
 .grid{
     display: grid;
@@ -226,7 +222,7 @@ footer{
 } */
 .contact-grid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: auto;
 }
 form{
@@ -237,15 +233,15 @@ form{
 .contact-color{
     grid-column: 1/-1;
     width: 100%;
-    max-height: 20vw;
+    max-height: 100px;
     grid-row: 3/4;
     overflow: hidden;
 }
 .contact-img{
-    padding: 25px;
     grid-column: 2/3;
-    width: 45vw;
+    width: 225px;
     grid-row: 2/5;
+    box-shadow: 0 0 7px 7px #a6a6a6; 
 }
 
 .form{
@@ -258,7 +254,7 @@ form{
 .grid1{
     margin:auto;
     font-family: 'Tenor Sans';
-    font-size: 1.25em;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -270,43 +266,38 @@ form{
 label{
     grid-column: 1/2;
     font-family: 'Fahkwang';
-    font-size: 0.85em;
+    font-size: 15px;
 }
 input{
     grid-column: 2/-1;
     font-family: 'Fahkwang';
-    font-size: 0.5em;
+    font-size: 10px;
 }
 #msg_id{
     grid-column: 2/-1;
     font-family: 'Fahkwang';
-    font-size: 0.5em;
+    font-size: 10px;
 }
 .format{
     grid-column: 2/-1;
     font-family: 'Fahkwang';
-    font-size: 0.65em;
+    font-size: 10.4px;
     padding-top: 5px;
 }
 .submit{
     font-family: 'Fahkwang';
-    font-size: 0.85em;
+    font-size: 13.6px;
 }
 .academics{
     padding: 50px 75px;
 }
 .academics h3{
     font-family: 'Tenor Sans';
-    font-size: .90em;
     font-weight: bold;
-    padding: 5px 10px;
 }
 .academics li{
     list-style-position: inside;
-    font-family: 'Fahkwang';
-    font-weight: normal;
     padding: 5px 20px;
-    font-size: 0.80em;
 }
 .education, .experience, .skills, .awards{
     padding: 10px 0px;
@@ -314,13 +305,26 @@ input{
 .border{
     border: 3px dotted black;
 }
+.skills h2{
+    grid-column: 1/-1;
+}
+.skills .border {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col1{
+    grid-column: 1/2;
+}
+.col2{
+    grid-column: 2/3;
+}
 
 /* Parallax Image */
 .parallax{
     background-attachment: fixed;  
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vw;
+    height: 125px;
   
     background-image: url("../imgs/Mike.jpg");
     background-position: center;
@@ -333,7 +337,7 @@ input{
     padding: 30px 0px 0px 0px;
     text-align: center;
     font-family: 'Tenor Sans';
-    font-size: .95em;
+    font-size: 15.2px;
 }
 .Equestrian{
     padding: 0px 75px;
@@ -341,7 +345,7 @@ input{
 /*Image Gallery */
 .gallery{
     padding: 30px 0px 30px 0px;
-    font-size: 1.25em;
+    font-size: 20px;
     text-align: center;
     font-family: 'Tenor Sans';
 }
@@ -376,7 +380,7 @@ input{
     border-radius: 30px;
     padding: 0px;  
     width: 100%;
-    padding: 4vw 1vw 0vw 1vw;
+    padding: 20px 5px 0px 5px;
     font-size: 3vw;
     color: rgba(0, 0, 0, 0);
 } 
@@ -428,7 +432,7 @@ input{
     background-attachment: fixed;  
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vw;
+    height: 125px;
 
   
     background-image: url("../imgs/umet.JPG");
@@ -442,7 +446,7 @@ input{
 .umet h2{
     display: flex;
     color: black;
-    font-size: 1.25em;
+    font-size: 20px;
     height: 150px;
     padding: 0px;
     margin: auto;
@@ -450,40 +454,39 @@ input{
     align-items: center;
 }
 .umet-txt{
-    padding: 0px 10vw;
-    font-size: 2.5vw;
+    padding: 0px 50px;
+    font-size: 12.5px;
 }
 .socials{
-    padding: 0px 15vw;
-    font-size: 3vw;
+    padding: 0px 125px;
     display: flex;
     flex-direction: column;
     padding-bottom: 175px;
 }
 .socials a{
     text-decoration: none;
+    color: black;
+    font-size: 15px;
+    vertical-align: middle;
 }
-.facebook a{
+.facebook a::first-letter{
     color: #4267B2;
+    font-size: 25px;
 }
-.instagram a {
-    border-radius: .75vw;
-    padding: 0.2vw 0.2vw 0.1vw 0.3vw;
+.instagram a::first-letter {
+    border-radius: 3.75px;
+    font-size: 25px;
+    padding: 1px 1px 0.5px 1.5px;
     color: white;
     background-image: linear-gradient(135deg, #405DE6 , #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
 }
 .facebook, .instagram {
-    padding-top: 2vw;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-#handle{
-    padding-left: 2vw;
-    font-size: 2.5vw;
-    background: none;
-    color: black;
-}
+
 @-webkit-keyframes name{
     0%   {top: -80px;}
     100% {top: 0px;}
@@ -526,16 +529,24 @@ input{
         display:block;
         position: absolute;
         color: black;
+        font-size: 25px;
         right: 0;
         top: 0;
     }
     .navbar .icon {
         position: relative;
+        font-size: 30px;
     }
 }
 @media all and (min-width: 601px){
     h1{
-        font-size: 6vw;
+        font-size: 45px;
+    }
+    h2, .grid1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
     }
     nav a{
         font-size: 2.5vw;
@@ -546,9 +557,22 @@ input{
     .flip-name{
         padding: 2vw 5vw;
     }
-    .page-title {
-        padding: 3.5vw;
-        font-size: 4vw;
+    .academics{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .education, .experience, .click{
+        grid-column: 1/-1;
+    }
+    .skills{
+        grid-column: 1/2;
+        grid-row: 3/span 1;
+        padding-right: 15px;
+    }
+    .awards{
+        grid-column: 2/-1;
+        grid-row: 3/span 1;
+        padding-left: 15px;
     }
     .eq-flex{
         display: flex;
@@ -566,9 +590,9 @@ input{
         border: 1.25vw solid #5b75a4;
         background-color: white;
     }
-    .eq-hidden h2{
+    .eq-hidden h3{
         padding: 25px 0px;
-        font-size: 3vw;
+        
     }
     .eq-h2{
         margin: 0;
@@ -594,25 +618,34 @@ input{
     .navbar-responsive .icon, .navbar .icon1, .navbar-responsive .icon1, .navbar .icon {
         display:none;
     }
+    input, .format, #msg_id{
+        font-size: 12px;
+    }
+
 
 }
 @media all and (min-width: 1025px){
     h1{
-        font-size: 4vw;
+        font-size: 40px;
         padding: 25px 0px;
     }
+    footer p, h5, .academics li{
+        padding: none;
+        font-family: 'Fahkwang';
+        font-size: 18.5px;
+    }
     p{
-        font-size: 1.5vw;
+        padding: 15px 50px;
     }
     nav a{
-        font-size: 1.5vw;
+        font-size: 20px;
     }
     #current a{
-        font-size: 2.5vw;
+        font-size: 25px;
     }
     .main_photo{
-        width: 25vw;
-        height: 35vw;
+        width: 250px;
+        height: 350px;
     }
     .aboutpg{
         display: grid;
@@ -625,21 +658,21 @@ input{
     }
 
     .intro {
-        padding: 0.5vw 5vw;
+        padding: 5px 50px;
     }
     .color-block{
         grid-column: 1/3;
         grid-row: 2/3;
         width: 400px;
-        height: 300px;
+        height: 150px;
     
     }
     /* flipcard? */
     .flip-card {
         grid-column: 2/3;
         grid-row: 1/4;
-        width: 25vw;
-        height: 35vw;
+        width: 250px;
+        height: 350px;
     }
     .flip-card:hover .flip-card-inner,
     .flip-card:focus-within .flip-card-inner {
@@ -647,13 +680,13 @@ input{
     }
       
     .flip-card-inner {
-        width: 25vw;
-        height: 35vw;
+        width: 250px;
+        height: 350px;
     }
       
     .flip-card-front, .flip-card-back {
-        width: 25vw;
-        height: 35vw;
+        width: 250px;
+        height: 350px;
     }
     .navbar{
         flex-flow: row nowrap;
@@ -663,20 +696,12 @@ input{
         padding: 15px;
     }
 
-    p{
-        padding: 15px 50px;
-    }
-    footer p, h5{
-        padding: none;
-        font-family: 'Fahkwang';
-        font-size: 1.15em;
-    }
     .academics{
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 15vw;
+        padding: 0px 150px;
         padding-bottom: 50px;
     }
+
     .education{
         padding: 2vw 0vw;
         grid-column: 1/-1;
@@ -692,18 +717,19 @@ input{
         align-self: center;
     }
     .experience{
-        padding: 2vw 2.5vw 0vw 0vw;
+        padding: 20px 25px 0px 0px;
         grid-column: 1/span 1;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
+
     .skills{
-        padding: 2vw 0vw 0vw 2.5vw;
+        padding: 0px 0px 0px 0px;
         grid-column: 2/-1;
         grid-row: 2/3;
     }
     .awards{
-        padding: 2vw 0vw;
-        grid-column: 1/-1;
+        padding: 20px 0px;
+        grid-column: 2/-1;
         grid-row: 3/4;
     }
     .contact-grid{
@@ -713,25 +739,20 @@ input{
     form{
         padding: 10px;
         grid-column: 2/3;
-        grid-row: 1/4;
+        grid-row: 1/6;
     }
     .contact-color{
         padding-left: 10px;
         grid-column: 3/-1;
         width: 100%;
-        max-height: 10vw;
-        grid-row: 2/3;
+        max-height: 100px;
+        grid-row: 3/4;
         overflow: hidden;
     }
     .contact-img{
         grid-column: 3/4;
-        padding-left: 10px;
-        padding-top: 50px;
-        width: 25vw;
-        grid-row: 1/4;
-    }
-    .page-title {
-        font-size: 2.5vw;
+        width: 250px;
+        grid-row: 2/6;
     }
     .eq-hidden{
         display: none;
@@ -748,9 +769,8 @@ input{
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .eq-hidden h2{
+    .eq-hidden h3{
         padding: 25px 0px;
-        font-size: 1.75vw;
     }
     .separator{
         grid-column: 2/3;
@@ -773,20 +793,19 @@ input{
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .Equestrian h2{
-        font-size: 2.5vw;
-    }
     .Equestrian p{
-        padding: 2vw;
-        font-size: 1.2vw;
+        padding:20px;
+    }
+    .Equestrian h2{
+        font-size: 25px;
     }
 
     /* EQ Flip Card */
     .flip-card1,
     .flip-card2,
     .flip-card3 {
-        width: 25vw;
-        height: 40vw;
+        width: 300px;
+        height: 475px;
         perspective: 1000px;
         align-self: center;
         grid-column: 2/3;
@@ -796,8 +815,8 @@ input{
     .flip-card-inner1,
     .flip-card-inner2,
     .flip-card-inner3 {
-        width: 25vw;
-        height: 40vw;
+        width: 300px;
+        height: 475px;
         transition: transform 0.6s;
         transform-style: preserve-3d;
     }
@@ -805,8 +824,8 @@ input{
     .flip-card-front1, .flip-card-back1, 
     .flip-card-front2, .flip-card-back2, 
     .flip-card-front3, .flip-card-back3 {
-        width: 25vw;
-        height: 40vw;
+        width: 300px;
+        height: 475px;
         position: absolute;
         backface-visibility: hidden;
     }
@@ -828,10 +847,11 @@ input{
         box-shadow: 0 0 7px 7px #a6a6a6; 
         transform: rotateY(180deg);
     }
+
     .flip-card-front1,
     .flip-card-front2,
     .flip-card-front3 {
-        border: 1.25vw solid #5b75a4;
+        border: 12.5px solid #5b75a4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -847,28 +867,25 @@ input{
         grid-column: 3/4;
     }
     .card1, .card2, .card3{
-        padding: 2.5vw;
+        padding: 25px;
         grid-row: 1/2;
     }
     .flip-name{
-        font-size: 3.5vw;
-        padding: .6vw 30px;
+        font-size: 25px;
+        padding: 15px 15px;
     }
     .flip-txt{
-        font-size: 1.5vw;
-        padding: .5vw 30px;
+        font-size: 15px;
+        padding: 5px 30px;
     }
     .navbar-responsive .icon, .navbar .icon1, .navbar-responsive .icon1, .navbar .icon {
         display:none;
     }
     .socials{
-        font-size: 2vw;
+        font-size: 20px;
     }
     .socials a{
         text-decoration: none;
-    }
-    #handle{
-        font-size: 2vw;
     }
 }
 @media (prefers-reduced-motion){
