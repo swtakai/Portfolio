@@ -64,11 +64,35 @@ nav a{
     font-size: 4.5vw;
     color: white;
 }
-.navbar .icon{
+/* responsive navbar */
+.navbar li:not(:first-child) {
+    display: none;
+}
+.navbar-responsive {
+    position: relative;
+}
+.navbar-responsive #light {
+    display:block;
+    position: absolute;
+    color: white;
+    right: 0;
+    top: 0;
+}
+.navbar-responsive li {
+    display: block;
+}
+.navbar-responsive .icon, .navbar .icon1 {
     display:none;
 }
-.navbar .icon1{
-    display:none;
+.navbar-responsive .icon1{
+    display:block;
+    position: absolute;
+    color: black;
+    right: 0;
+    top: 0;
+}
+.navbar .icon {
+    position: relative;
 }
 .skip a{
     background: #F0F8FF;
@@ -508,46 +532,6 @@ input{
    width: 100vw;
    position: relative;
    animation: name 5s 1;  
-}
-@media all and (max-width: 600px){
-    /* responsive navbar */
-    .navbar li:not(:first-child) {
-        display: none;
-    }
-    
-    .navbar-responsive {
-        position: relative;
-    }
-    .navbar-responsive .icon {
-        display:none;
-    }
-    .navbar-responsive .icon1 {
-        display:block;
-        position: absolute;
-        color: black;
-        right: 0;
-        top: 0;
-    }
-
-    .navbar-responsive #light {
-        display:block;
-        position: absolute;
-        color: white;
-        right: 0;
-        top: 0;
-    }
-    .navbar-responsive li {
-        display: block;
-    }
-    .navbar .icon{
-        display:block;
-        position: relative;
-        padding: 10x 0px;
-        font-size: 30px;
-    }
-    .navbar .icon1{
-        display:none;
-    }
 }
 
 
