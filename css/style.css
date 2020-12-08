@@ -437,11 +437,9 @@ input{
   
     grid-column: 1 / -1;
     grid-row: 1 / auto;
-  }
-  .socials{
-    padding-bottom: 275px;
-  }
-  .umet h2{
+}
+
+.umet h2{
     display: flex;
     color: black;
     font-size: 1.25em;
@@ -461,9 +459,6 @@ input{
     display: flex;
     flex-direction: column;
     padding-bottom: 175px;
-}
-.socials p {
-    padding: none;
 }
 .socials a{
     text-decoration: none;
@@ -865,6 +860,15 @@ input{
     }
     .navbar-responsive .icon, .navbar .icon1, .navbar-responsive .icon1, .navbar .icon {
         display:none;
+    }
+    .socials{
+        font-size: 2vw;
+    }
+    .socials a{
+        text-decoration: none;
+    }
+    #handle{
+        font-size: 2vw;
     }
 }
 @media (prefers-reduced-motion){
