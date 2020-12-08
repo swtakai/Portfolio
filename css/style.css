@@ -505,7 +505,8 @@ input{
    animation: name 5s 1;  
 }
 
-@media all and (max-width: 601px){
+
+@media all and (max-width: 600px){
     /* responsive navbar */
     .navbar li:not(:first-child) {
         display: none;
@@ -595,18 +596,9 @@ input{
         font-size: 2.5vw;
     }
 
-    /* .gallery, .container{
-        grid-column: 1/-1;
-    } */
-    /* .hunter{
-        grid-row: 1/2;
+    .navbar-responsive .icon, .navbar .icon1, .navbar-responsive .icon1, .navbar .icon {
+        display:none;
     }
-    .equitation{
-        grid-row: 2/3;
-    }
-    .jumper{
-        grid-row: 3/4;
-    } */
 
 }
 @media all and (min-width: 1025px){
@@ -870,6 +862,9 @@ input{
     .flip-txt{
         font-size: 1.5vw;
         padding: .5vw 30px;
+    }
+    .navbar-responsive .icon, .navbar .icon1, .navbar-responsive .icon1, .navbar .icon {
+        display:none;
     }
 }
 @media (prefers-reduced-motion){
