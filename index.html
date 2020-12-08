@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF858BP7ZM"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQWDTK4WF1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
-	gtag('config', 'G-VF858BP7ZM');
+	gtag('config', 'G-SQWDTK4WF1');
 	</script>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About Me!</title>
+	<title>Academics</title>
 	<link rel="icon" href="imgs/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Fahkwang' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
 </head>
 <body>
 <header>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>	
-	<div class = "title">
+	<div class="title">
 		<h1 class = "myname">Saya Takai</h1>
 	</div>
 	<nav>
-		<ul class = "navbar">
-			<li class = "nav_links" id = "current"><a href="index.html">About</a></li>
+		<ul class = "navbar" id = "mynavbar">
+            <li><a class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a></li>
+            <li><a class="icon1" id = "light" onclick="myFunction()">
+                <i class="fa fa-times"></i></a></li>
+			<li class = "nav_links"  id = "current"><a href="index.html">About</a></li>
 			<li class = "nav_links"><a href="academics.html">Academics</a></li>
 			<li class = "nav_links"><a href="equestrian.html">Equestrian</a></li>
 			<li class = "nav_links"><a href="umet.html">UMET</a></li>
-			<li class = "nav_links"><a href="contact.html">Contact</a></li>
+            <li class = "nav_links"><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 </header>
 <main id = "main" class = "aboutpg">
 <img class = "color-block" src = "imgs/DarkBlue.png" alt="dark blue block" width="100"/>
 <div class="flip-card">
-	<div class="flip-card-inner">
+	<div tabindex="0" class="flip-card-inner">
 	  <div class="flip-card-front">
 		  <img class = "main_photo" src = "imgs/saya1.jpeg" alt="A picture of me!" width="100"/>
 
@@ -64,5 +70,15 @@
 <footer>
 <p>Saya Takai &copy; 2020</p>
 </footer>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mynavbar");
+      if (x.className == "navbar") {
+        x.className = "navbar responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
 </body>
 </html>

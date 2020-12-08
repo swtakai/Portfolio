@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF858BP7ZM"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQWDTK4WF1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
-	gtag('config', 'G-VF858BP7ZM');
+	gtag('config', 'G-SQWDTK4WF1');
 	</script>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Equestrian</title>
+	<title>Academics</title>
 	<link rel="icon" href="imgs/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Fahkwang' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
 </head>
 <body>
 <header>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>	
-	<div class = "title">
+	<div class="title">
 		<h1 class = "myname">Saya Takai</h1>
 	</div>
 	<nav>
-		<ul class = "navbar">
+		<ul class = "navbar" id = "mynavbar">
+            <li><a class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a></li>
+            <li><a class="icon1" onclick="myFunction()">
+                <i class="fa fa-times"></i></a></li>
 			<li class = "nav_links"><a href="index.html">About</a></li>
 			<li class = "nav_links"><a href="academics.html">Academics</a></li>
 			<li class = "nav_links"  id = "current"><a href="equestrian.html">Equestrian</a></li>
 			<li class = "nav_links"><a href="umet.html">UMET</a></li>
-			<li class = "nav_links"><a href="contact.html">Contact</a></li>
+            <li class = "nav_links"><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 </header>
@@ -42,12 +47,12 @@
 	<h2 class = "page-title">Equestrian</h2>
 	<div class = "Equestrian">
 	<div class = "card1">
-		<div class="flip-card2">
-			<div class="flip-card-inner2">
-			<div class="flip-card-front2">
+		<div class="flip-card1">
+			<div tabindex="0" class="flip-card-inner1">
+			<div class="flip-card-front1">
 				<h2>Hunter</h2>	
 			</div>
-			<div class="flip-card-back2">
+			<div class="flip-card-back1">
 				<p>I competed in the Children's Pony Hunters as well as the Pony Hunters with my pony Billy. We won many championships across the midwest, and competed at the USEF Pony Finals in 2015. At pony finals, we placed 23rd out of 86 in the Large Green Pony Hunter Over Fences.</p>
 				<p>I competed in the Children's Hunters as well as the Junior Hunters with my Luna. We competed at AA shows across Michigan, and competed at the USEF Junior Hunter Finals in 2017. We placed in 2nd on the flat.</p>
 			</div>
@@ -56,7 +61,7 @@
 	</div>
 	<div class = "card2">
 		<div class="flip-card2">
-			<div class="flip-card-inner2">
+			<div tabindex="0" class="flip-card-inner2">
 			<div class="flip-card-front2">
 				<h2>Equitation</h2>
 			</div>
@@ -68,12 +73,12 @@
 		</div>
 	</div>
 	<div class = "card3">
-		<div class="flip-card2">
-			<div class="flip-card-inner2">
-			<div class="flip-card-front2">
+		<div class="flip-card3">
+			<div tabindex="0" class="flip-card-inner3">
+			<div class="flip-card-front3">
 				<h2>Jumper</h2>
 			</div>
-			<div class="flip-card-back2">
+			<div class="flip-card-back3">
 				<p>This summer I competed with Mike in jumper classes. We got champion at the Great Lakes Equestrian Festival as well as multiple blue ribbons throughout the summer.</p>
 			</div>
 			</div>
@@ -83,18 +88,33 @@
 
 	<div class = "eq-hidden">
 		<div class = "hunter">
-			<h2>Hunter</h2>
-			<p>I competed in the Children's Pony Hunters as well as the Pony Hunters with my pony Billy. We won many championships across the midwest, and competed at the USEF Pony Finals in 2015. At pony finals, we placed 23rd out of 86 in the Large Green Pony Hunter Over Fences.</p>
-			<p>I competed in the Children's Hunters as well as the Junior Hunters with my Luna. We competed at AA shows across Michigan, and competed at the USEF Junior Hunter Finals in 2017. We placed in 2nd on the flat.</p>
+			<div class = "eq-h2">
+				<h2>Hunter</h2>
+			</div>
+			<div class = "separator"></div>
+			<div class = "eq-p">
+				<p>I competed in the Children's Pony Hunters as well as the Pony Hunters with my pony Billy. We won many championships across the midwest, and competed at the USEF Pony Finals in 2015. At pony finals, we placed 23rd out of 86 in the Large Green Pony Hunter Over Fences.</p>
+				<p>I competed in the Children's Hunters as well as the Junior Hunters with my Luna. We competed at AA shows across Michigan, and competed at the USEF Junior Hunter Finals in 2017. We placed in 2nd on the flat.</p>
+			</div>
 		</div>
 		<div class = "equitation">
-			<h2>Equitation</h2>
-			<p>I competed with Billy in the Pony Equitation. We won the Hunter Jumper Association of Michigan Pony Medal Final in 2016.</p>
-			<p>I competed in the age equitation and the big equitation with Luc. We won the Maclay at Waterloo Hunt Club as well as the NCEA medal at the World Equestrian Center. We qualified for and competed in Maclay Regionals, NCEA Finals, HJAM Medal Finals, and NHS Medal Finals.</p>
+			<div class = "eq-h2">
+				<h2>Equitation</h2>
+			</div>
+			<div class = "separator"></div>
+			<div class = "eq-p">
+				<p>I competed with Billy in the Pony Equitation. We won the Hunter Jumper Association of Michigan Pony Medal Final in 2016.</p>
+				<p>I competed in the age equitation and the big equitation with Luc. We won the Maclay at Waterloo Hunt Club as well as the NCEA medal at the World Equestrian Center. We qualified for and competed in Maclay Regionals, NCEA Finals, HJAM Medal Finals, and NHS Medal Finals.</p>
+			</div>
 		</div>
 		<div class = "jumper">
-			<h2>Jumper</h2>
-			<p>This summer I competed with Mike in jumper classes. We got champion at the Great Lakes Equestrian Festival as well as multiple blue ribbons throughout the summer.</p>
+			<div class = "eq-h2">
+				<h2>Jumper</h2>
+			</div>
+			<div class = "separator"></div>
+			<div class = "eq-p">
+				<p>This summer I competed with Mike in jumper classes. We got champion at the Great Lakes Equestrian Festival as well as multiple blue ribbons throughout the summer.</p>
+			</div>
 		</div>
 	</div>
 	<h3 class = "gallery">Photo Gallery</h3>
@@ -111,23 +131,33 @@
 		<img class = "item10" src = "imgs/Luna_Champ.jpg" alt = "Luna and I after getting champion our first time in the Junior Hunters"/>
 		<img class = "item11" src = "imgs/BillyPFwarmup.jpg" alt = "Billy and I schooling at Pony Finals"/>
 		<img class = "item12" src = "imgs/LunaHJAM.jpg" alt = "Luna and I competing at HJAM in the Junior Hunters"/>
-		<h4 class="text1">Luna and I jumping at Junior Hunter Finals</h4>
-		<h4 class="text2">Billy and I after we won HJAM Pony Medal Finals</h4>
-		<h4 class="text3">Luna and I after getting 2nd at Junior Hunter Finals</h4>
-		<h4 class="text4">Luc and I's first place ribbon from the Maclay class at Waterloo</h4>
-		<h4 class="text5">Billy and I jumping at Pony Finals</h4>
-		<h4 class="text6">Billy and I's first show together in 2013</h4>
-		<h4 class="text7">Billy and I jumping at Pony Finals</h4>
-		<h4 class="text8">Billy and I after we won HJAM Pony Medal Finals</h4>
-		<h4 class="text9">Luc and I competing at the National Horse Show in the age eq and medal final in 2018</h4>
-		<h4 class="text10">Luna and I after getting champion in the Junior Hunters</h4>
-		<h4 class="text11">Billy and I schooling at Pony Finals</h4>
-		<h4 class="text12">Luna and I competing in the Junior Hunters</h4>
+		<h4 tabindex = "0"  class="text1">Luna and I jumping at Junior Hunter Finals</h4>
+		<h4 tabindex = "0"  class="text2">Billy and I after we won HJAM Pony Medal Finals</h4>
+		<h4 tabindex = "0"  class="text3">Luna and I after getting 2nd at Junior Hunter Finals</h4>
+		<h4 tabindex = "0"  class="text4">Luc and I's first place ribbon from the Maclay class at Waterloo</h4>
+		<h4 tabindex = "0"  class="text5">Billy and I jumping at Pony Finals</h4>
+		<h4 tabindex = "0"  class="text6">Billy and I's first show together in 2013</h4>
+		<h4 tabindex = "0"  class="text7">Billy and I jumping at Pony Finals</h4>
+		<h4 tabindex = "0"  class="text8">Billy and I after we won HJAM Pony Medal Finals</h4>
+		<h4 tabindex = "0"  class="text9">Luc and I competing at the National Horse Show in the age eq and medal final in 2018</h4>
+		<h4 tabindex = "0"  class="text10">Luna and I after getting champion in the Junior Hunters</h4>
+		<h4 tabindex = "0"  class="text11">Billy and I schooling at Pony Finals</h4>
+		<h4 tabindex = "0"  class="text12">Luna and I competing in the Junior Hunters</h4>
 
 </main>
 
 <footer>
 <h5>Saya Takai &copy; 2020</h5>
 </footer>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mynavbar");
+      if (x.className == "navbar") {
+        x.className = "navbar responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
 </body>
 </html>
