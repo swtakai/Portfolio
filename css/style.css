@@ -125,7 +125,7 @@ main{
 .color-block{
     grid-column: 1/-1;
     grid-row: 2/3;
-    width: 100%;
+    width: 25vw;
     height: 150px;
 
 }
@@ -790,7 +790,7 @@ input{
     }
     .Equestrian{
         display: grid;
-        justify-content: center;
+        align-self: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .Equestrian p{
@@ -886,6 +886,9 @@ input{
     }
     .socials a{
         text-decoration: none;
+    }
+    .socials h3{
+        text-align: left;
     }
 }
 @media (prefers-reduced-motion){
